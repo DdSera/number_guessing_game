@@ -6,17 +6,30 @@ function clickAction() {
 
   if (userInput.value == randomNumber) {
     document.getElementById("result").innerHTML = "You Won";
-    document.getElementById("imageBox").innerHTML = `img
-        width="300px"
-        src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fsearch%2Fwinning-dance-gifs&psig=AOvVaw3e1XH99AqOcGk2y4gBanku&ust=1749378806980000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCOj1zJuO340DFQAAAAAdAAAAABAy"
+    document.getElementById("tblCustomer").innerHTML = `<img
+        width="300px" height="300px"
+        src="https://media1.tenor.com/m/XKVZDttTe1wAAAAC/happy-dance-excited.gif"
         alt="Winner"
       />`;
   } else if (userInput.value > randomNumber) {
     document.getElementById("result").innerHTML = "Too high! Try again...";
+    document.getElementById("tblCustomer").innerHTML = `<img
+        width="300px" height="300px"
+        src="https://i.pinimg.com/originals/ec/3e/b3/ec3eb3ac15a0584f0766b365f443d953.gif"
+        alt="Winner"
+      />`;
   } else if (userInput.value < randomNumber) {
     document.getElementById("result").innerHTML = "Too low! Try again...";
+    document.getElementById("tblCustomer").innerHTML = `<img
+        width="300px" height="300px"
+        src="https://media.tenor.com/5zzFKqhUXC4AAAAM/wee-ride.gif"
+        alt="Winner"
+      />`;
   }
 }
+
+let attemptsArray = [];
+do {} while (userInput.value != randomNumber);
 
 let customerList = [
   {

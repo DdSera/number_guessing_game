@@ -1,73 +1,67 @@
 /* I only generate CSS using ChatGPT */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
 
 body {
-  background: linear-gradient(to right, #c59bfc, #984af8);
-  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+  margin: 0;
+  padding: 0;
   display: flex;
+  height: 100vh;
   justify-content: center;
   align-items: center;
 }
 
 .frame {
   background-color: white;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   text-align: center;
   max-width: 400px;
-  width: 100%;
+  width: 90%;
 }
 
 .frame h3 {
-  color: #2c3e50;
+  color: #333;
   margin-bottom: 10px;
 }
 
 .frame h6 {
-  color: #7f8c8d;
+  color: #666;
   margin-bottom: 20px;
 }
 
-input[type="text"] {
+#inputText {
   padding: 10px;
-  width: 80%;
+  width: 60%;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-bottom: 15px;
+  font-size: 16px;
 }
 
 input[type="button"] {
   padding: 10px 20px;
-  background-color: #3498db;
-  color: white;
   border: none;
-  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
   cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
   transition: background-color 0.3s;
 }
 
 input[type="button"]:hover {
-  background-color: #2980b9;
+  background-color: #0056b3;
 }
 
 #result {
   margin-top: 20px;
-  font-size: 20px;
-  color: #34495e;
+  font-size: 18px;
+  color: #444;
 }
 
 .imageBox {
   margin-top: 20px;
-}
-
-.imageBox img {
-  max-width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

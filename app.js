@@ -13,7 +13,7 @@ function clickAction() {
     document.getElementById("imageBox").innerHTML = `<img
         width="300px" height="300px"
         src="https://media1.tenor.com/m/XKVZDttTe1wAAAAC/happy-dance-excited.gif"
-        alt="Winner"
+        alt="Winner gif"
       />`;
     //alert("Winner");
   } else if (userInput.value > randomNumber) {
@@ -21,14 +21,14 @@ function clickAction() {
     document.getElementById("imageBox").innerHTML = `<img
         width="300px" height="300px"
         src="https://i.pinimg.com/originals/ec/3e/b3/ec3eb3ac15a0584f0766b365f443d953.gif"
-        alt="Winner"
+        alt="too high gif"
       />`;
   } else if (userInput.value < randomNumber) {
     document.getElementById("result").innerHTML = "Too low! Try again...";
     document.getElementById("imageBox").innerHTML = `<img
         width="300px" height="300px"
         src="https://media.tenor.com/5zzFKqhUXC4AAAAM/wee-ride.gif"
-        alt="Winner"
+        alt="too low gif"
       />`;
   }
 }
